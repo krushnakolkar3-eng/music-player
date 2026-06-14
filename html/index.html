@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player">
+
+        <h2>Music Player</h2>
+
+        <img
+            src="https://via.placeholder.com/250"
+            alt="Song Cover"
+            class="cover"
+        >
+
+        <h3 id="song-title">Song Name</h3>
+
+        <audio id="audio">
+            <source src="song1.mp3" type="audio/mpeg">
+        </audio>
+
+        <input
+            type="range"
+            id="progress"
+            value="0"
+            min="0"
+            max="100"
+        >
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
